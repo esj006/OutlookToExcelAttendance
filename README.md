@@ -1,46 +1,33 @@
-# OutlookToExcelAttendance
+OutlookToExcelAttendance
+Overview
+OutlookToExcelAttendance is a comprehensive tool designed to export attendance data from Microsoft Outlook to an Excel spreadsheet. This utility is ideal for professionals and organizations looking to efficiently manage and track attendance records.
 
-This GitHub repository contains VBA code for exporting participant lists and attendance status from Outlook meetings to an Excel workbook. This can be useful for keeping track of participants and their response statuses for meetings.
+Key Features
+Automated Data Export: Extracts attendance information from Outlook and imports it directly into Excel.
+Customizable Excel Sheet: The Excel sheet is structured to display attendance data clearly, including attendee names, attendance status, response, and email addresses.
+User-Friendly Interface: Easy to use, catering to users with different levels of technical expertise.
+VBA Scripting: Utilizes Visual Basic for Applications (VBA) scripting to automate tasks within Excel.
+Requirements
+Microsoft Outlook: Access to Outlook is necessary to retrieve attendance data.
+Microsoft Excel: Excel is used for data formatting and presentation.
+VBA Enabled: Ensure that VBA is enabled in Excel to run the scripts properly.
+Excel Sheet Description
+The Excel sheet is designed to display various details such as attendee names, their status (e.g., Meeting Organizer, Required Attendee, Optional Attendee), response status (Accepted, Tentative, Declined, None), and email addresses. It also includes summary columns with formulas to count the number of responses in each category.
 
-## Usage
+Included Files
+OutlookToExcelExporter.bas: This script exports data from Outlook to Excel. It checks for meetings with a specified title, processes attendees, and populates the Excel sheet with relevant data.
+SendEmail.bas: This script is used to send emails with customizable subject lines and body content. It allows for the inclusion of BCC recipients and handles responses like 'None' and 'Tentative' with user confirmation.
+Usage
+Setup: Ensure that Microsoft Outlook and Excel are installed and that VBA is enabled in Excel.
+Import Scripts: Import the .bas files into Excel.
+Run the Script: Execute OutlookToExcelExporter.bas to export data from Outlook to Excel. Use SendEmail.bas to send emails based on the exported data.
+Authorization
+Users must authorize the tool to access their Outlook data for security and data integrity.
 
-The following steps provide an overview of how to use the VBA code:
+License
+Refer to the license file for information on usage and redistribution.
 
-1. Open the Excel workbook where you want to import data from the Outlook meeting.
+Contributing
+Contributions are welcome. Please follow the contributing guidelines for more information on how to contribute.
 
-2. Add the code to the VBA editor:
-   - Copy and paste the VBA code from `EksporterDeltakereFraOutlookMote()` in this repository into the Excel VBA editor.
-
-3. Modify the parameters:
-   - Set the meeting title in Excel cell K2.
-   - Optionally, customize the email text in Excel cell K3.
-
-4. Run the code:
-   - Execute the VBA code by clicking "Run" or pressing "F5" in the VBA editor.
-
-5. Results:
-   - The code will retrieve the participant list and attendance status from the Outlook meeting and display it in the Excel workbook.
-
-## Features
-
-- Retrieves participants based on the meeting title.
-- Categorizes participants into meeting organizer, required attendees, and optional attendees.
-- Displays participants' response statuses (Accepted, Tentative, Declined, No Response).
-- Provides an overview of participants' email addresses.
-
-## Requirements
-
-- Microsoft Excel.
-- Microsoft Outlook.
-
-## Authorization
-
-Please note that this solution may require authorization to access Outlook data. Ensure that you have the necessary permissions before using this code.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-**Note:** This is a simple README file. You can customize this file with additional information, usage instructions, and screenshots as needed to help users understand and use your VBA code.
+This README provides a comprehensive overview of the project, its requirements, and usage instructions. You can modify or expand upon this template to better suit the specific details and functionalities of your project.
