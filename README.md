@@ -36,13 +36,6 @@ The Excel sheet is designed to display various details such as attendee names, t
 - **v1.2.1 Beta**
   - Added detection for recurring meetings with a selection menu.
   - Fixed issue in email reminders to exclude attendees who declined the meeting.
-  - Known bugs related to special characters in meeting titles.
-
-## Authorization
-Users must authorize the tool to access their Outlook data for security and data integrity.
-
-## License
-Refer to the license file for information on usage and redistribution.
-
+  
 ## Contributing
 Contributions are welcome. Please follow the contributing guidelines for more information on how to contribute.
